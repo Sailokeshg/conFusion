@@ -1,0 +1,11 @@
+.jumbotron
+{
+    background-color: rgb(116, 88, 192);
+}
+.footer
+{
+    background-color: rgb(194, 139, 245);
+}
+small{
+    font-weight:normal;
+}
