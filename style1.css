@@ -1,7 +1,7 @@
 .jumbotron
 {
-    padding:70px;
-    background-color: rgb(116, 88, 192);
+    padding:90px 0px 90px 0px;
+    background-color: #9575cd;
 }
 .footer
 {
@@ -9,4 +9,7 @@
 }
 small{
     font-weight:normal;
+}
+.navbar-dark{
+    background-color:#512DA8;
 }
