@@ -31,7 +31,7 @@
 
         </ul>
         <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a id="loginlink">
                 <span class="fa fa-sign-in"></span> Login
             </a>
         </span>
@@ -118,8 +118,8 @@
                         </div>
                         <div class="row" id="logmodal">
                             <div class="col-md-2 col-sm-12"><b>Section</b></div>
-                            <div class="col-md-10 col-sm-12">
-                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <div class="col-md-10 col-sm-12" id="smokebutton">
+                                    <div class="btn-group btn-group-toggle"  data-toggle="buttons">
                                         <label class="btn btn-success active">
                                             <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Non-Smoking
                                         </label>
@@ -163,7 +163,7 @@
                  <img src="./img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-sm-3 align-self-center">
-                <button type="button" class="btn btn-warning btn-xs btn-block"  ><a data-toggle="modal" data-target="#resmodal" >Reserve Table</a></button>
+                <button type="button" class="btn btn-warning btn-xs btn-block"  ><a id="resbutton">Reserve Table</a></button>
             </div>
             </div>
         </div>
@@ -329,7 +329,12 @@
    
          
      });
- 
+     $('#loginlink').click(function(){
+          $('#loginModal').modal('toggle');
+     });
+     $('#resbutton').click(function(){
+          $('#resmodal').modal('toggle');
+     });
 
 
     </script>
